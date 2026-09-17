@@ -1,1 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkora - Premium Tech & Gear</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#0b0c10',
+            brandCardDark: '#121318',
+            brandGreen: '#22c55e',
+            brandGreenHover: '#16a34a',
+            brandGray: '#1f2937'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-brandDark text-white font-sans antialiased selection:bg-brandGreen selection:text-black">
 
+  <!-- 1. Header & Navigation -->
+  <header class="border-b border-gray-800 bg-brandDark/95 sticky top-0 z-50 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      
+      <!-- Brand Logo: Inkora -->
+      <div class="flex items-center space-x-2">
+        <i class="fa-solid fa-bolt text-brandGreen text-2xl"></i>
+        <span class="text-2xl font-extrabold tracking-tight text-white">Ink<span class="text-brandGreen">ora</span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+        <a href="#hero-slider" class="hover:text-brandGreen transition-colors">Featured</a>
+        <a href="#categories" class="hover:text-brandGreen transition-colors">Categories</a>
+        <a href="#hydration" class="hover:text-brandGreen transition-colors">Hydration</a>
+        <a href="#audio" class="hover:text-brandGreen transition-colors">Audio</a>
+        <a href="#wearables" class="hover:text-brandGreen transition-colors">Wearables</a>
+      </nav>
+
+      <!-- Search & Actions -->
+      <div class="flex items-center space-x-5 text-gray-300">
+        <button class="hover:text-brandGreen"><i class="fa-solid fa-magnifying-glass text-lg"></i></button>
+        <button class="hover:text-brandGreen"><i class="fa-regular fa-user text-lg"></i></button>
+        <button class="hover:text-brandGreen relative">
+          <i class="fa-solid fa-bag-shopping text-lg"></i>
+          <span class="absolute -top-1 -right-2 bg-brandGreen text-black text-xs font-bold rounded-full h-4 w-4 flex items-center justify-center">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hero Interactive Carousel -->
+  <section id="hero-slider" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative">
+    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-brandCardDark to-gray-900 border border-gray-800">
+      
+      <!-- Container for Slides -->
+      <div id="slider-track" class="flex transition-transform duration-700 ease-in-out">
+        
+        <!-- Slide 1: HydroJug Traveler (المنتج الجديد) -->
+        <div class="min-w-full p-8 md:p-12 flex flex-col md:flex-row items-center justify-between">
+          <div class="z-10 max-w-xl text-center md:text-left mb-6 md:mb-0">
+            <span class="bg-brandGreen/20 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Top Trending</span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-3 leading-tight">
+              HydroJug Traveler 40oz Tumbler
+            </h1>
+            <p class="mt-3 text-gray-400 text-sm md:text-base">Stainless steel insulated tumbler with handle, circular straw, and leak-proof lid (Pink Sand).</p>
+            <div class="mt-6">
+              <a href="https://www.amazon.com/-/ar/dp/B0CQVWT2NH?pd_rd_w=hRJsF&content-id=amzn1.sym.fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_p=fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_r=HSC82S6CVG4E9JS2W5TM&pd_rd_wg=9I3eR&pd_rd_r=fd032445-0d6d-4785-b7ef-beb7a4242688&pd_rd_i=B0CQVWT2NH&th=1&linkCode=ll2&tag=inkora05-20&linkId=cab72cfe994ade3c4ca4cf7ad6965c20&language=ar_AE&gaOptInStatus=true&ref_=as_li_ss_tl" 
+                 target="_blank" rel="noopener noreferrer" 
+                 class="inline-block bg-brandGreen hover:bg-brandGreenHover text-black font-semibold px-6 py-3 rounded-lg transition-transform transform active:scale-95 shadow-lg shadow-brandGreen/20">
+                Shop Now - $39.99
+              </a>
+            </div>
+          </div>
+          <a href="https://www.amazon.com/-/ar/dp/B0CQVWT2NH?pd_rd_w=hRJsF&content-id=amzn1.sym.fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_p=fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_r=HSC82S6CVG4E9JS2W5TM&pd_rd_wg=9I3eR&pd_rd_r=fd032445-0d6d-4785-b7ef-beb7a4242688&pd_rd_i=B0CQVWT2NH&th=1&linkCode=ll2&tag=inkora05-20&linkId=cab72cfe994ade3c4ca4cf7ad6965c20&language=ar_AE&gaOptInStatus=true&ref_=as_li_ss_tl" 
+             target="_blank" rel="noopener noreferrer" class="w-full md:w-1/2 flex justify-center cursor-pointer">
+            <img src="https://cdn11.bigcommerce.com/s-xch90o1pyy/images/stencil/1280x1280/products/9646/24791/Hydro40_pinksand3__41574.1745452949.jpg" alt="HydroJug Traveler 40oz Pink Sand" class="max-h-64 object-contain rounded-lg hover:scale-105 transition-transform duration-300 drop-shadow-2xl" />
+          </a>
+        </div>
+
+        <!-- Slide 2: Owala FreeSip -->
+        <div class="min-w-full p-8 md:p-12 flex flex-col md:flex-row items-center justify-between">
+          <div class="z-10 max-w-xl text-center md:text-left mb-6 md:mb-0">
+            <span class="bg-brandGreen/20 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Best Seller</span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-3 leading-tight">
+              Owala FreeSip Stainless Steel Bottle
+            </h1>
+            <p class="mt-3 text-gray-400 text-sm md:text-base">24oz insulated water bottle with built-in straw and push-button lock lid (Denim Color).</p>
+            <div class="mt-6">
+              <a href="https://www.amazon.com/-/ar/dp/B0BZYCJK89" target="_blank" rel="noopener noreferrer" 
+                 class="inline-block bg-brandGreen hover:bg-brandGreenHover text-black font-semibold px-6 py-3 rounded-lg transition-transform transform active:scale-95 shadow-lg shadow-brandGreen/20">
+                Shop Now - $27.99
+              </a>
+            </div>
+          </div>
+          <a href="https://www.amazon.com/-/ar/dp/B0BZYCJK89" target="_blank" rel="noopener noreferrer" class="w-full md:w-1/2 flex justify-center cursor-pointer">
+            <img src="https://m.media-amazon.com/images/I/51dBIK9H2uL.jpg" alt="Owala FreeSip Bottle" class="max-h-64 object-contain rounded-lg hover:scale-105 transition-transform duration-300 drop-shadow-2xl" />
+          </a>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="min-w-full p-8 md:p-12 flex flex-col md:flex-row items-center justify-between">
+          <div class="z-10 max-w-xl text-center md:text-left mb-6 md:mb-0">
+            <span class="bg-red-500/20 text-red-400 text-xs font-bold px-3 py-1 rounded-full">Top Deal</span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-3 leading-tight">
+              Next-Gen Wireless Headphones
+            </h1>
+            <p class="mt-3 text-gray-400 text-sm md:text-base">Immersive sound with active noise cancellation and 40-hour battery life.</p>
+            <div class="mt-6">
+              <a href="#" target="_blank" rel="noopener noreferrer" 
+                 class="inline-block bg-brandGreen hover:bg-brandGreenHover text-black font-semibold px-6 py-3 rounded-lg transition-transform transform active:scale-95 shadow-lg shadow-brandGreen/20">
+                Shop Now - $149.00
+              </a>
+            </div>
+          </div>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="w-full md:w-1/2 flex justify-center cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80" alt="Headphones" class="max-h-64 object-contain rounded-lg hover:scale-105 transition-transform duration-300 drop-shadow-2xl" />
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button id="prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-brandGreen text-white hover:text-black p-3 rounded-full transition-colors z-20">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-brandGreen text-white hover:text-black p-3 rounded-full transition-colors z-20">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- 3. Categories Quick Navigation -->
+  <section id="categories" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+      <i class="fa-solid fa-shapes text-brandGreen"></i> Shop By Category
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <a href="#hydration" class="bg-brandCardDark border border-gray-800 p-4 rounded-xl text-center hover:border-brandGreen transition-colors group">
+        <i class="fa-solid fa-bottle-water text-2xl text-gray-400 group-hover:text-brandGreen mb-2"></i>
+        <h3 class="font-bold text-sm text-gray-200">Drinkware & Hydration</h3>
+      </a>
+      <a href="#audio" class="bg-brandCardDark border border-gray-800 p-4 rounded-xl text-center hover:border-brandGreen transition-colors group">
+        <i class="fa-solid fa-headphones text-2xl text-gray-400 group-hover:text-brandGreen mb-2"></i>
+        <h3 class="font-bold text-sm text-gray-200">Audio & Sound</h3>
+      </a>
+      <a href="#wearables" class="bg-brandCardDark border border-gray-800 p-4 rounded-xl text-center hover:border-brandGreen transition-colors group">
+        <i class="fa-solid fa-stopwatch text-2xl text-gray-400 group-hover:text-brandGreen mb-2"></i>
+        <h3 class="font-bold text-sm text-gray-200">Smart Wearables</h3>
+      </a>
+      <a href="#accessories" class="bg-brandCardDark border border-gray-800 p-4 rounded-xl text-center hover:border-brandGreen transition-colors group">
+        <i class="fa-solid fa-plug text-2xl text-gray-400 group-hover:text-brandGreen mb-2"></i>
+        <h3 class="font-bold text-sm text-gray-200">Accessories</h3>
+      </a>
+    </div>
+  </section>
+
+  <!-- 4. Category: Drinkware & Hydration -->
+  <section id="hydration" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-900">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-2xl font-bold text-white">Drinkware & Hydration</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Product Card 1: HydroJug Traveler 40oz (المنتج الخاص بك) -->
+      <div class="bg-white rounded-xl overflow-hidden flex flex-col justify-between p-4 shadow-lg text-black group relative">
+        <span class="absolute top-3 left-3 bg-brandGreen text-black text-xs font-bold px-2 py-1 rounded">40 oz Pink Sand</span>
+        <a href="https://www.amazon.com/-/ar/dp/B0CQVWT2NH?pd_rd_w=hRJsF&content-id=amzn1.sym.fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_p=fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_r=HSC82S6CVG4E9JS2W5TM&pd_rd_wg=9I3eR&pd_rd_r=fd032445-0d6d-4785-b7ef-beb7a4242688&pd_rd_i=B0CQVWT2NH&th=1&linkCode=ll2&tag=inkora05-20&linkId=cab72cfe994ade3c4ca4cf7ad6965c20&language=ar_AE&gaOptInStatus=true&ref_=as_li_ss_tl" 
+           target="_blank" rel="noopener noreferrer" class="h-52 flex items-center justify-center mb-4 overflow-hidden pt-4">
+          <img src="https://cdn11.bigcommerce.com/s-xch90o1pyy/images/stencil/1280x1280/products/9646/24791/Hydro40_pinksand3__41574.1745452949.jpg" alt="HydroJug Traveler 40oz" class="max-h-full object-contain group-hover:scale-110 transition-transform duration-300" />
+        </a>
+        <div>
+          <h3 class="font-bold text-gray-900 text-base leading-snug">HydroJug Traveler 40oz Stainless Steel Tumbler</h3>
+          <p class="text-xs text-gray-500 mt-1">Leak-Proof Lid, Flip Straw & Ergonomic Handle</p>
+          <p class="font-bold text-brandGreen text-lg mt-2 mb-4">$39.99</p>
+          <a href="https://www.amazon.com/-/ar/dp/B0CQVWT2NH?pd_rd_w=hRJsF&content-id=amzn1.sym.fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_p=fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_r=HSC82S6CVG4E9JS2W5TM&pd_rd_wg=9I3eR&pd_rd_r=fd032445-0d6d-4785-b7ef-beb7a4242688&pd_rd_i=B0CQVWT2NH&th=1&linkCode=ll2&tag=inkora05-20&linkId=cab72cfe994ade3c4ca4cf7ad6965c20&language=ar_AE&gaOptInStatus=true&ref_=as_li_ss_tl" 
+             target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-brandGreen hover:bg-brandGreenHover text-black font-semibold py-2 rounded-md transition-colors">
+            View on Amazon
+          </a>
+        </div>
+      </div>
+
+      <!-- Product Card 2: Owala FreeSip -->
+      <div class="bg-white rounded-xl overflow-hidden flex flex-col justify-between p-4 shadow-lg text-black group relative">
+        <span class="absolute top-3 left-3 bg-brandGreen text-black text-xs font-bold px-2 py-1 rounded">24 oz Denim</span>
+        <a href="https://www.amazon.com/-/ar/dp/B0BZYCJK89" target="_blank" rel="noopener noreferrer" class="h-52 flex items-center justify-center mb-4 overflow-hidden pt-4">
+          <img src="https://m.media-amazon.com/images/I/51dBIK9H2uL.jpg" alt="Owala FreeSip Water Bottle" class="max-h-full object-contain group-hover:scale-110 transition-transform duration-300" />
+        </a>
+        <div>
+          <h3 class="font-bold text-gray-900 text-base leading-snug">Owala FreeSip Stainless Steel Water Bottle</h3>
+          <p class="text-xs text-gray-500 mt-1">BPA-Free, Built-In Straw, Locking Push-Button Lid</p>
+          <p class="font-bold text-brandGreen text-lg mt-2 mb-4">$27.99</p>
+          <a href="https://www.amazon.com/-/ar/dp/B0BZYCJK89" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-brandGreen hover:bg-brandGreenHover text-black font-semibold py-2 rounded-md transition-colors">
+            View on Amazon
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. Category: Audio & Sound -->
+  <section id="audio" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-900">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-2xl font-bold text-white">Audio & Sound</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl overflow-hidden flex flex-col justify-between p-4 shadow-lg text-black group">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="h-48 flex items-center justify-center mb-4 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&q=80" alt="Earbuds" class="max-h-full object-contain group-hover:scale-110 transition-transform duration-300" />
+        </a>
+        <div>
+          <h3 class="font-bold text-gray-900 text-base">Wireless Noise Cancelling Earbuds</h3>
+          <p class="font-semibold text-gray-800 mt-1 mb-4">$89.99</p>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-brandGreen hover:bg-brandGreenHover text-black font-semibold py-2 rounded-md transition-colors">
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Footer -->
+  <footer class="bg-brandDark text-gray-400 text-xs py-8 border-t border-gray-900 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center space-x-2">
+        <i class="fa-solid fa-bolt text-brandGreen text-xl"></i>
+        <span class="text-xl font-extrabold text-white">Ink<span class="text-brandGreen">ora</span></span>
+      </div>
+      <p>&copy; 2026 Inkora Store. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const track = document.getElementById('slider-track');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    
+    let currentIndex = 0;
+    const totalSlides = 3;
+
+    function updateSlider() {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlider();
+    });
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider();
+    }, 4000);
+  </script>
+
+</body>
+</html>
